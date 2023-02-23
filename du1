@@ -13,19 +13,18 @@ void vypisz(int z[15]){
 }
 
 void zjedn(int a[10], int b[5]){
-	int z[15];int z_index=10;
+	int z[15];int z_index=10; int k=0;
 copy(a,z);
-	for(int i=0; i<5; i++)
+	for(int i=0; i<5; i++){
 		for( int j=0; j<10; j++)
-			{ if(b[i]!=a[j])
-				{
+			 if(b[i]!=a[j]) k++;
+			if(k==10){
 				z[z_index]=b[i];
 				z_index++;
 				}
-			}
-		for(int i=0; i<15; i++ ){
-		printf("%d ", z[i]);
-	}
+			k=0;
+		}
+		vypisz(z);
 }
 
 int main(){
