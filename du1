@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int zjedn(int a[10], int b[5]){
+void zjedn(int a[10], int b[5]){
 	int z[10];int z_index=10;
 	for(int i=0; i<10; i++){
 		z[i]=a[i];		
@@ -14,10 +14,12 @@ int zjedn(int a[10], int b[5]){
 				z_index++;
 				}
 			}
-	return z;
+		for(int i=0; i<15; i++ ){
+		printf("%d ", z[i]);
+	}
 }
 
 int main(){
-	a[10]={1,2,3,4,5,6,7,8,9,10}, b[5]={4,5,12,20,32};
+	int a[10]={1,2,3,4,5,6,7,8,9,10}, b[5]={4,5,12,20,32};
 	
 }
