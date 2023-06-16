@@ -52,3 +52,7 @@ int main(){
 	puts("\n Prienik:  ");
 	prien(a,b);
 }
+
+
+git mv du1.c du11.c
+git commit -m "Premenovanie suboru du1.c na du11.c"
