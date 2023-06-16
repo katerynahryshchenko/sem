@@ -11,13 +11,13 @@ void vypisz(int z[15]){
 		printf("%d ", z[i]);
 	}	
 }
-
+aaaaaaaaaaaaaa
 void vypisp(int p[5]){
  	for(int i=0; i<5; i++ ){
 		printf("%d ", p[i]);
 	}	
 }
-
+dddddddddddddd
 void zjedn(int a[10], int b[5]){
 	int z[15]={};int z_index=10; int k=0;
 copy(a,z);
